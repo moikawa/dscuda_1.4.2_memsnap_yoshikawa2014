@@ -1,0 +1,9 @@
+cudaver=4.1
+export CUDAPATH=/usr/local/cuda${cudaver}/cuda
+export CUDASDKPATH=/usr/local/cuda${cudaver}/NVIDIA_GPU_Computing_SDK
+export DSCUDA_PATH=/share01/yoshikawa/src/dscudapkg1.4.2_memsnap
+export DSCUDA_WARNLEVEL=2
+export LD_LIBRARY_PATH=$CUDAPATH/lib64:$LD_LIBRARY_PATH
+export PATH=$DSCUDA_PATH/src:$CUDAPATH/bin:$PATH
+export DSCUDA_REMOTECALL="ibv"
+export OMP_NUM_THREADS=16

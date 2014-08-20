@@ -1,0 +1,11 @@
+cudaver=4.1
+dscver=1.2.0
+export CUDAPATH=/usr/local/cuda${cudaver}/cuda
+export CUDASDKPATH=/usr/local/cuda${cudaver}/NVIDIA_GPU_Computing_SDK
+export DSCUDA_PATH=/share01/yoshikawa/src/dscudapkg1.4.2_memsnap
+export DSCUDA_WARNLEVEL=2
+export LD_LIBRARY_PATH=$DSCUDA_PATH/lib:$LD_LIBRARY_PATH
+export PATH=$DSCUDA_PATH/bin:$CUDAPATH/bin:$PATH
+#export DSCUDA_SERVER_CONF=/share01/kawai/svrconf
+#export DSCUDA_SERVER="192.168.0.102 192.168.0.103"
+export DSCUDA_REMOTECALL="ibv"
